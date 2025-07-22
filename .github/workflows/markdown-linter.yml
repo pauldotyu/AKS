@@ -54,5 +54,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_MARKDOWN: true
-          LINTER_RULES_PATH: .github/linters
+          MARKDOWN_CONFIG_FILE: ${{ github.workspace }}/.github/linters/.markdown-lint.yml
           FILTER_REGEX_INCLUDE: ${{ matrix.file }}
