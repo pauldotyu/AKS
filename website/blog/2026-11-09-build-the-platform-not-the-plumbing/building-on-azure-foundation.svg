@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 575" width="1000" height="575" role="img" aria-labelledby="t d" font-family="'Segoe UI', -apple-system, Helvetica, Arial, sans-serif">
+<title id="t">Building on an Azure foundation</title>
+<desc id="d">Four layers. Developers use their namespace, pull requests, AKS desktop, and Copilot CLI. Platform teams choose open source tools like Backstage, Crossplane or kro, OpenTofu or ASO, cert-manager, and External Secrets. AKS Automatic manages Argo CD, workload identity, Entra and Kubernetes RBAC, Deployment Safeguards, and app routing. Azure services connect through identity.</desc>
+<rect width="1000" height="575" fill="#0d1b26"/>
+<text x="20" y="50" font-size="32" font-weight="600" fill="#ffffff">Building on an Azure foundation</text>
+<text x="20" y="82" font-size="19" fill="#8ec5f0">Managed foundation, open source choice</text>
+<text x="20" y="106" font-size="13.5" fill="#5fd3a8">Workload identity first, so apps don't hold stored keys for Azure services</text>
+<rect x="20" y="125" width="180" height="80" rx="4" fill="#1f3d2e" stroke="#4caf7d" stroke-width="1.5"/>
+<text x="34" y="155.0" font-size="11" font-weight="600" letter-spacing="0.5" fill="#d6e4f0">YOUR DEVELOPERS</text>
+<text x="34" y="181.0" font-size="16.5" font-weight="600" fill="#ffffff">Use the contract</text>
+<rect x="215.0" y="125" width="182.25" height="80" rx="4" fill="#173326" stroke="#4caf7d" stroke-width="1.5"/>
+<text x="227.0" y="163.0" font-size="14.5" font-weight="600" fill="#ffffff">Their namespace</text>
+<text x="227.0" y="183.0" font-size="12.5" fill="#a9bccd">Quota, RBAC, network policy</text>
+<rect x="409.25" y="125" width="182.25" height="80" rx="4" fill="#173326" stroke="#4caf7d" stroke-width="1.5"/>
+<text x="421.25" y="163.0" font-size="14.5" font-weight="600" fill="#ffffff">A pull request</text>
+<text x="421.25" y="183.0" font-size="12.5" fill="#a9bccd">Review, then reconcile</text>
+<rect x="603.5" y="125" width="182.25" height="80" rx="4" fill="#173326" stroke="#4caf7d" stroke-width="1.5"/>
+<text x="615.5" y="163.0" font-size="14.5" font-weight="600" fill="#ffffff">AKS desktop</text>
+<text x="615.5" y="183.0" font-size="12.5" fill="#a9bccd">See and fix their apps</text>
+<rect x="797.75" y="125" width="182.25" height="80" rx="4" fill="#173326" stroke="#4caf7d" stroke-width="1.5"/>
+<text x="809.75" y="163.0" font-size="14.5" font-weight="600" fill="#ffffff">Copilot CLI</text>
+<text x="809.75" y="183.0" font-size="12.5" fill="#a9bccd">Containerization Assist MCP</text>
+<rect x="20" y="220" width="180" height="80" rx="4" fill="#1b2430" stroke="#8a9bb0" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="34" y="250.0" font-size="11" font-weight="600" letter-spacing="0.5" fill="#d6e4f0">OPEN SOURCE</text>
+<text x="34" y="276.0" font-size="16.5" font-weight="600" fill="#ffffff">You choose</text>
+<rect x="215.0" y="220" width="143.4" height="80" rx="4" fill="#1b2430" stroke="#8a9bb0" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="227.0" y="258.0" font-size="14.5" font-weight="600" fill="#ffffff">Backstage</text>
+<text x="227.0" y="278.0" font-size="12.5" fill="#a9bccd">Portal</text>
+<rect x="370.4" y="220" width="143.4" height="80" rx="4" fill="#1b2430" stroke="#8a9bb0" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="382.4" y="258.0" font-size="14.5" font-weight="600" fill="#ffffff">Crossplane</text>
+<text x="382.4" y="278.0" font-size="12.5" fill="#a9bccd">Control plane (or kro)</text>
+<rect x="525.8" y="220" width="143.4" height="80" rx="4" fill="#1b2430" stroke="#8a9bb0" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="537.8" y="258.0" font-size="14.5" font-weight="600" fill="#ffffff">OpenTofu</text>
+<text x="537.8" y="278.0" font-size="12.5" fill="#a9bccd">IaC (or ASO)</text>
+<rect x="681.2" y="220" width="143.4" height="80" rx="4" fill="#1b2430" stroke="#8a9bb0" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="693.2" y="258.0" font-size="14.5" font-weight="600" fill="#ffffff">cert-manager</text>
+<text x="693.2" y="278.0" font-size="12.5" fill="#a9bccd">TLS</text>
+<rect x="836.6" y="220" width="143.4" height="80" rx="4" fill="#1b2430" stroke="#8a9bb0" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="848.6" y="258.0" font-size="14.5" font-weight="600" fill="#ffffff">External Secrets</text>
+<text x="848.6" y="278.0" font-size="12.5" fill="#a9bccd">or CSI / App Config</text>
+<rect x="20" y="315" width="180" height="150" rx="4" fill="#0f6cbd" stroke="#2b88d8" stroke-width="1.5"/>
+<text x="34" y="380.0" font-size="11" font-weight="600" letter-spacing="0.5" fill="#d6e4f0">AKS MANAGED</text>
+<text x="34" y="406.0" font-size="16.5" font-weight="600" fill="#ffffff">Azure runs it</text>
+<rect x="215" y="315" width="765" height="150" rx="4" fill="#0f2a40" stroke="#2b88d8" stroke-width="1.5"/>
+<text x="229" y="343" font-size="17" font-weight="600" fill="#ffffff">AKS Automatic <tspan font-size="13" font-weight="400" fill="#a9bccd">Nodes, scaling, upgrades</tspan></text>
+<rect x="227.0" y="360" width="138.6" height="93" rx="4" fill="#123a57" stroke="#2b88d8" stroke-width="1.5"/>
+<text x="239.0" y="404.5" font-size="14.5" font-weight="600" fill="#ffffff">Argo CD</text>
+<text x="239.0" y="424.5" font-size="12.5" fill="#a9bccd">GitOps extension</text>
+<rect x="377.6" y="360" width="138.6" height="93" rx="4" fill="#123a57" stroke="#2b88d8" stroke-width="1.5"/>
+<text x="389.6" y="404.5" font-size="14.5" font-weight="600" fill="#ffffff">Workload identity</text>
+<text x="389.6" y="424.5" font-size="12.5" fill="#a9bccd">OIDC issuer</text>
+<rect x="528.2" y="360" width="138.6" height="93" rx="4" fill="#123a57" stroke="#2b88d8" stroke-width="1.5"/>
+<text x="540.2" y="404.5" font-size="14.5" font-weight="600" fill="#ffffff">Entra + K8s RBAC</text>
+<text x="540.2" y="424.5" font-size="12.5" fill="#a9bccd">No kubeconfig secrets</text>
+<rect x="678.8" y="360" width="138.6" height="93" rx="4" fill="#123a57" stroke="#2b88d8" stroke-width="1.5"/>
+<text x="690.8" y="404.5" font-size="14.5" font-weight="600" fill="#ffffff">Safeguards</text>
+<text x="690.8" y="424.5" font-size="12.5" fill="#a9bccd">Azure Policy</text>
+<rect x="829.4" y="360" width="138.6" height="93" rx="4" fill="#123a57" stroke="#2b88d8" stroke-width="1.5"/>
+<text x="841.4" y="404.5" font-size="14.5" font-weight="600" fill="#ffffff">App routing</text>
+<text x="841.4" y="424.5" font-size="12.5" fill="#a9bccd">Gateway API</text>
+<rect x="20" y="480" width="180" height="80" rx="4" fill="#14263a" stroke="#5ea3dc" stroke-width="1.5"/>
+<text x="34" y="510.0" font-size="11" font-weight="600" letter-spacing="0.5" fill="#d6e4f0">AZURE SERVICES</text>
+<text x="34" y="536.0" font-size="16.5" font-weight="600" fill="#ffffff">Wired in by identity</text>
+<rect x="215.0" y="480" width="117.5" height="80" rx="4" fill="#14263a" stroke="#3a6a96" stroke-width="1.5"/>
+<text x="227.0" y="518.0" font-size="14.5" font-weight="600" fill="#ffffff">Entra ID</text>
+<text x="227.0" y="538.0" font-size="12.5" fill="#a9bccd">SSO and groups</text>
+<rect x="344.5" y="480" width="117.5" height="80" rx="4" fill="#14263a" stroke="#3a6a96" stroke-width="1.5"/>
+<text x="356.5" y="518.0" font-size="14.5" font-weight="600" fill="#ffffff">Key Vault</text>
+<text x="356.5" y="538.0" font-size="12.5" fill="#a9bccd">Secrets, certs</text>
+<rect x="474.0" y="480" width="117.5" height="80" rx="4" fill="#14263a" stroke="#3a6a96" stroke-width="1.5"/>
+<text x="486.0" y="518.0" font-size="14.5" font-weight="600" fill="#ffffff">Azure DNS</text>
+<text x="486.0" y="538.0" font-size="12.5" fill="#a9bccd">Zones</text>
+<rect x="603.5" y="480" width="117.5" height="80" rx="4" fill="#14263a" stroke="#3a6a96" stroke-width="1.5"/>
+<text x="615.5" y="518.0" font-size="14.5" font-weight="600" fill="#ffffff">Storage</text>
+<text x="615.5" y="538.0" font-size="12.5" fill="#a9bccd">Data and state</text>
+<rect x="733.0" y="480" width="117.5" height="80" rx="4" fill="#14263a" stroke="#3a6a96" stroke-width="1.5"/>
+<text x="745.0" y="518.0" font-size="14.5" font-weight="600" fill="#ffffff">Monitor</text>
+<text x="745.0" y="538.0" font-size="12.5" fill="#a9bccd">Metrics, logs</text>
+<rect x="862.5" y="480" width="117.5" height="80" rx="4" fill="#14263a" stroke="#3a6a96" stroke-width="1.5"/>
+<text x="874.5" y="518.0" font-size="14.5" font-weight="600" fill="#ffffff">AI and more</text>
+<text x="874.5" y="538.0" font-size="12.5" fill="#a9bccd">Any Azure service</text>
+</svg>
