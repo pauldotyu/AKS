@@ -15,33 +15,32 @@ Every blog post MUST include:
 ```yaml
 ---
 title: "Descriptive Post Title"
-date: YYYY-MM-DD
 description: "SEO-optimized summary (150-160 characters)"
 authors: [author-key]  # From blog/authors.yml
 tags: [tag1, tag2]     # From blog/tags.yml
-draft: false            # Optional: set to true to hide from production
 ---
 ```
 
 **Validation Checklist**:
 
 - [ ] `title`: Clear, descriptive, under 60 chars
-- [ ] `date`: Valid format, can be future-dated for future publishing
+- [ ] No `date` field: Use the `YYYY-MM-DD` folder prefix as the publication date
+- [ ] Omit `draft`: Keep unfinished posts in PRs until ready to publish
 - [ ] `description`: 150-160 chars, includes keywords
 - [ ] `authors`: Valid keys from `blog/authors.yml`
 - [ ] `tags`: Valid keys from `blog/tags.yml`
 
 ### Blog Post Date
 
-The publish date is determined by the **folder name** (e.g., `2025-12-19-my-post/index.md`). Docusaurus extracts the date from folder/filename patterns like `YYYY-MM-DD-slug` or `YYYY/MM/DD/slug`. If you specify a `date` in front matter, it **overrides** the folder-derived date.
+The publish date is determined by the **folder name** (e.g., `2025-12-19-my-post/index.md`). Do not add `date` in front matter. It overrides the folder-derived date and can make the displayed date inconsistent with the URL.
 
-**Important**: Unlike Jekyll, Docusaurus does **NOT** hide future-dated posts. All posts are published immediately when deployed, regardless of date. To prevent premature publishing:
+**Publishing**: Merging to `master` means publish. Keep unfinished posts in PRs until ready. Omit `draft` from front matter; Docusaurus defaults it to `false`.
 
-- Use `draft: true` in front matter to exclude from production builds (visible only in dev)
-- Use `unlisted: true` to hide from listings but keep accessible via direct link
-- Alternatively, keep the post in a separate branch until ready
+**Important**: Docusaurus does **NOT** hide future-dated posts. A future folder date does not delay publication. `unlisted: true` hides a post from listings but still makes it publicly accessible, so it is not a way to hold unfinished content.
 
-**Before merging**: If PR review takes longer than expected and the folder date becomes stale, update the folder name (or add a `date` override in front matter) to reflect the actual publish date. Posts should show the date readers will see them, not when they were originally drafted.
+**Before merging**: If PR review takes longer than expected and the folder date becomes stale, update the folder name to reflect the actual publish date. Posts should show the date readers will see them, not when they were originally drafted.
+
+**Existing posts**: Leave existing `date` overrides and folder names unchanged when making unrelated edits, so published dates and URLs stay stable.
 
 ## Content Structure
 
@@ -50,7 +49,6 @@ The publish date is determined by the **folder name** (e.g., `2025-12-19-my-post
 ```markdown
 ---
 title: "..."
-date: YYYY-MM-DD
 description: "..."
 authors: [...]
 tags: [...]
@@ -261,8 +259,10 @@ See our previous post on [AKS networking fundamentals](/2024/01/15/aks-networkin
 
 ## Common Mistakes to Avoid
 
-❌ **Future-dated posts without `draft: true`**: Docusaurus publishes all posts immediately—use `draft: true` to hold back unready content
-❌ **Stale dates from long PR reviews**: Update the folder name or add `date` front matter before merging if the original date is now in the past
+❌ **Merging unfinished posts**: Keep them in PRs. Neither a future date nor `unlisted: true` prevents public access.
+❌ **`draft: true` in front matter**: Merging means publish. Omit `draft` so the post is included in production builds.
+❌ **Stale dates from long PR reviews**: Update the folder name before merging if the original date is now in the past
+❌ **`date` in front matter**: Use the folder name as the single source of the publication date
 ❌ **Missing truncate marker**: Full post shows on listing page  
 ❌ **Bare URLs**: Always use `[text](url)` syntax  
 ❌ **Locale based URLs**: Use generic links (no `/en-us/`)  
@@ -278,6 +278,8 @@ Before submitting a blog post:
 
 - [ ] Content follows the Microsoft Style Guide
 - [ ] Front matter complete and validated
+- [ ] New posts omit `date` and use the intended publication date in the folder name
+- [ ] Omit `draft` and keep unfinished content in the PR
 - [ ] `<!-- truncate -->` after intro (2-3 paragraphs)
 - [ ] All images have descriptive alt text
 - [ ] All code blocks have language specified
@@ -297,7 +299,6 @@ Before submitting a blog post:
 ```markdown
 ---
 title: "Optimizing AKS Network Performance with CNI Plugins"
-date: 2025-10-04
 description: "Compare Azure CNI and Kubenet for AKS networking to optimize performance, security, and cost for your workloads."
 authors: [paul-yu]
 tags: [aks, networking, performance, cni]
